@@ -4,7 +4,7 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "copy:vendor": "cpx \"node_modules/{angular,jquery/dist,knockout/build/output}/**/*\" public/assets/vendor -C",
+    "copy:vendor": "cpx \"node_modules/{angular,bootstrap/dist,bootstrap-icons/font,jquery/dist,knockout/build/output}/**/*\" public/assets/vendor -C",
     "scss:app": "sass public/assets/sass/app.scss public/assets/css/app.css",
     "build:css": "npm run scss:app",
     "build": "npm install && npm run copy:vendor && npm run build:css",
@@ -15,6 +15,8 @@
   "license": "copyleft-next-0.3.1",
   "dependencies": {
     "angular": "1.8.2",
+    "bootstrap": "5.1.3",
+    "bootstrap-icons": "1.8.1",
     "debug": "4.3.3",
     "express": "4.17.3",
     "jquery": "3.6.0",

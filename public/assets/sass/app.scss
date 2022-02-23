@@ -8,3 +8,32 @@ textarea {
     size: 0.8rem;
   }
 }
+main {
+  &.no-back {
+    button {
+      &.back {
+        display: none;
+      }
+    }
+  }
+  button {
+    &.back {
+      margin: {
+        top: 3rem;
+      }
+    }
+  }
+
+  #buttons, #gender {
+    padding: 0.75rem;
+    legend {
+      font: {
+        size: 0.853rem
+      }
+    }
+  }
+  #textarea {
+    height: 11rem;
+  }
+}
+

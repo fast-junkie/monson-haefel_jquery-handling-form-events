@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
+      </div>
+    </nav>
+
+    <main class="container my-3 no-back">
+      <h3>Buttons and Click Events - Step 02</h3>
+      <form id="regForm" autocomplete="off">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Textarea -->
+            <div class="form-floating mb-3">
+              <textarea id="textarea" class="form-control" name="textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin tortor purus platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus himenaeos fames primis convallis nisi.</textarea>
+              <label for="textarea">Biography</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Select Basic -->
+            <div class="form-floating mb-3">
+              <select id="selectbasic" class="form-select" name="selectbasic">
+                <option hidden selected value>-- select an option --</option>
+                <option value="ET">Eastern Time</option>
+                <option value="CT">Central Time</option>
+                <option value="MT">Mountain Time</option>
+                <option value="PT">Pacific Time</option>
+              </select>
+              <label for="selectbasic">US Time Zone</label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="btn-group btn-group-two float-end" role="group" aria-label="Form Navigation">
+              <button type="button" id="backPage" class="btn btn-secondary">
+                <i class="bi bi-arrow-left-circle"></i> Back
+              </button>
+              <button type="button" id="nextPage" class="btn btn-secondary">
+                Next <i class="bi bi-arrow-right-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

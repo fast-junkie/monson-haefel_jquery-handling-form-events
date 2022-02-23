@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
+      </div>
+    </nav>
+
+    <main class="container my-3 no-back">
+      <h3>Document Loading Events</h3>
+      <form id="regForm" autocomplete="off">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- First Name Text Input-->
+            <div class="form-floating mb-3">
+              <input type="text" id="firstName" class="form-control" name="firstName" placeholder="First Name" />
+              <label for="firstName">First Name</label>
+            </div>
+            <!-- Last Name Text Input-->
+            <div class="form-floating mb-3">
+              <input type="text" id="lastName" class="form-control" name="lastName" placeholder="Last Name" />
+              <label for="lastName">Last Name</label>
+            </div>
+            <!-- Radio Buttons -->
+            <fieldset id="gender" class="mb-3">
+              <legend>Gender</legend>
+              <input type="radio" id="male" class="btn-check" name="option" autocomplete="off" value="male" />
+              <label for="male" class="btn btn-outline-dark">Male</label>
+
+              <input type="radio" id="female" class="btn-check" name="option" autocomplete="off" value="female" />
+              <label for="female" class="btn btn-outline-dark">Female</label>
+
+              <input type="radio" id="other" class="btn-check" name="option" autocomplete="off" value="other" />
+              <label for="other" class="btn btn-outline-dark">Other</label>
+              
+              <div id="radioDiv"></div>
+            </fieldset>
+          </div>
+          <div class="col-md-6">
+            <!-- Email Text Input-->
+            <div class="form-floating mb-3">
+              <input type="email" id="email" class="form-control" name="email" placeholder="Email" autocomplete="username" />
+              <label for="email">Email</label>
+            </div>
+            <!-- Password input-->
+            <div class="form-floating mb-3">
+              <input type="password" id="pwd1" class="form-control" name="pwd1" placeholder="Password" autocomplete="new-password" />
+              <label for="pwd1">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" id="pwd2" class="form-control" name="pwd2" placeholder="Confirm Password" autocomplete="new-password" />
+              <label for="pwd2">Confirm Password</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Textarea -->
+            <div class="form-floating mb-3">
+              <textarea id="textarea" class="form-control" name="textarea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin tortor purus platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus himenaeos fames primis convallis nisi.</textarea>
+              <label for="textarea">Biography</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Select Basic -->
+            <div class="form-floating mb-3">
+              <select id="selectbasic" class="form-select" name="selectbasic">
+                <option hidden selected value>-- select an option --</option>
+                <option value="ET">Eastern Time</option>
+                <option value="CT">Central Time</option>
+                <option value="MT">Mountain Time</option>
+                <option value="PT">Pacific Time</option>
+              </select>
+              <label for="selectbasic">US Time Zone</label>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Button (Double) -->
+            <fieldset id="buttons" class="mb-3">
+              <legend>Button Types</legend>
+              <div class="btn-group">
+                <input type="submit" id="submitButton" class="btn btn-dark" name="submit" />
+                <input type="reset" id="resetButton" class="btn btn-dark" name="reset" />
+                <input type="button" id="customButton" class="btn btn-dark" value="Custom Button" />
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <img 
+                src="https://bestanimations.com/Fantasy/Dragons/dragon-animated-gif-55.gif"
+                id="atomImg" 
+                class="flex-fill img-fluid rounded" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
