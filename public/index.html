@@ -11,6 +11,7 @@
     <title></title>
   </head>
   <body>
+
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <a href="/" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
@@ -23,12 +24,24 @@
         <div class="col-md-6">
           <dl>
             <dt>
+              <a class="btn btn-sm btn-link" data-bs-toggle="collapse" data-bs-target="#collapseM04">
+                Module 04 - jQuery and Ajax
+              </a>
+            </dt>
+            <dd>
+              <ol id="collapseM04" class="collapse show">
+                <li><a href="./m04/ajax-cors-and-jsonp/">Ajax, CORS and JSONP</a></li>
+                <li><a href="./m04/ajax-and-myptv/">Ajax and MyPTV</a></li>
+                <li><a href="./m04/handling-ajax-errors/">Handling Ajax Errors</a></li>
+              </ol>
+            </dd>
+            <dt>
               <a class="btn btn-sm btn-link" data-bs-toggle="collapse" data-bs-target="#collapseM03">
                 Module 03 - jQuery Form Methods and Autocomplete
               </a>
             </dt>
             <dd>
-              <ol id="collapseM03" class="collapse show">
+              <ol id="collapseM03" class="collapse">
                 <li><a href="./m03/enable-and-disable/">Enable and Disable</a></li>
                 <li><a href="./m03/autocomplete-with-array/">Autocomplete with Array</a></li>
                 <li><a href="./m03/autocomplete-with-remote/">Autocomplete with Remote</a></li>
@@ -71,12 +84,11 @@
         <div class="col-md-6"></div>
         <div class="col-md-6"></div>
       </div>
-      
     </main>
-    
 
     <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+
   </body>
 </html>

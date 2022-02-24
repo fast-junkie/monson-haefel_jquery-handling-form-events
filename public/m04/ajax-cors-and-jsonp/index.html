@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/vendor/jquery-ui-dist/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
+      </div>
+    </nav>
+
+    <main class="container my-3 no-back">
+      <h3>Autocomplete with Remote</h3>
+      <form id="form_citydetails" name="form_citydetails" enctype="multipart/form-data" method="post" onsubmit="return false;">
+        <!-- Name Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="name" class="form-control" name="name" placeholder="Name" />
+            <label for="name">Name</label>
+          </div>
+        </div>
+
+        <!-- Street Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="street" class="form-control" name="street" placeholder="Street" />
+            <label for="street">Street</label>
+          </div>
+        </div>
+
+        <!-- City Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="city" class="form-control" name="city[]" placeholder="City" value="" />
+            <label for="city">City</label>
+          </div>
+        </div>
+
+        <!-- State Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="state" class="form-control" name="state" placeholder="State" />
+            <label for="state">State</label>
+          </div>
+        </div>
+
+        <!-- zip Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="zip" class="form-control" name="zip" placeholder="Zip" />
+            <label for="zip">Zip</label>
+          </div>
+        </div>
+
+        <!-- Street Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="country" class="form-control" name="country" placeholder="Country" />
+            <label for="country">Country</label>
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="ui-widget">
+          <div class="btn-group mb-3 float-end">
+            <input type="submit" id="submitButton" class="btn btn-dark" name="submit" disabled />
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
