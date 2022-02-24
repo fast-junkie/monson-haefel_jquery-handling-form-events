@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="fj.app">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand"><i class="bi bi-house-fill"></i></a>
+      </div>
+    </nav>
+
+    <main class="container my-3 no-back" ng-controller="mainController as main">
+      <h3>Data Binding with AngularJS</h3>
+      <form id="form_binding" name="form_binding" method="post" onsubmit="return false;">
+        <!-- First Name Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="firstName" class="form-control" name="firstName" ng-model="main.firstName" placeholder="First Name" />
+            <label for="firstName">First Name</label>
+          </div>
+        </div>
+
+        <!-- Last Name Text Input-->
+        <div class="ui-widget">
+          <div class="form-floating mb-3">
+            <input type="text" id="lastName" class="form-control" name="lastName" ng-model="main.lastName" placeholder="Last Name" />
+            <label for="lastName">Last Name</label>
+          </div>
+        </div>
+
+        <!-- Output -->
+        <div class="ui-widget">
+          <div class="card">
+            <div class="card-header">
+              Output
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">First Name: <span ng-bind="main.firstName"></span></li>
+                <li class="list-group-item">Last Name: <span ng-bind="main.lastName"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/vendor/angular/angular.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

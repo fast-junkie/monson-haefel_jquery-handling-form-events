@@ -4,9 +4,10 @@
     "node": true
   },
   "globals": {
-    "angular": true,
-    "jQuery": true,
-    "$": true
+    "angular": false,
+    "jQuery": false,
+    "$": false,
+    "ko": false
   },
   "parserOptions": {
     "ecmaVersion": "latest"

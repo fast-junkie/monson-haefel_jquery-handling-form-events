@@ -14,4 +14,4 @@ ___
 
 ### Summary
 ---
-:skull:
+:skull: Lots of kool tidbits in this one... though I spent far too much time bootstrapin' all his vanilla forms.
