@@ -4,7 +4,7 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "copy:vendor": "cpx \"node_modules/{angular,bootstrap/dist,bootstrap-icons/font,jquery/dist,knockout/build/output}/**/*\" public/assets/vendor -C",
+    "copy:vendor": "cpx \"node_modules/{angular,bootstrap/dist,bootstrap-icons/font,jquery/dist,jquery-ui-dist,knockout/build/output}/**/*\" public/assets/vendor -C",
     "scss:app": "sass public/assets/sass/app.scss public/assets/css/app.css",
     "build:css": "npm run scss:app",
     "build": "npm install && npm run copy:vendor && npm run build:css",
@@ -20,6 +20,7 @@
     "debug": "4.3.3",
     "express": "4.17.3",
     "jquery": "3.6.0",
+    "jquery-ui-dist": "1.13.1",
     "knockout": "3.5.1",
     "morgan": "1.10.0"
   },
